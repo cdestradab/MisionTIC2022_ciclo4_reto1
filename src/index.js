@@ -11,8 +11,8 @@ const port = process.env.PORT || 3000;
 app.listen(port,()=>console.log('server listening on port', port));
 
 //middlewares
-app.use('/api', userRoute);
 app.use(express.json());
+app.use('/api', userRoute);
 
 //routes
 app.get('/', (req, res)=>{

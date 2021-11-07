@@ -1,6 +1,6 @@
 ###
 POST http://localhost:3000/api/users HTTP/1.1
-Content-Type: application/json
+content-Type: application/json
 
 {
     "name": "Loquillo",
@@ -9,13 +9,23 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/users/'id1' HTTP/1.1
+POST http://localhost:3000/api/users HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Murciego",
+    "age": 13,
+    "email": "jijiojoj@gmail.com" 
+}
 
 ###
-DELETE http://localhost:3000/api/users/'id1' HTTP/1.1
+GET http://localhost:3000/api/users/61876575e0fc5437cc66e3d4 HTTP/1.1
 
 ###
-PUT http://localhost:3000/api/users/'id2' HTTP/1.1
+DELETE http://localhost:3000/api/users/6185bf108f7b0f6ee9639eac HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/6185bf108f7b0f6ee9639eac HTTP/1.1
 Content-Type: application/json
 
 {

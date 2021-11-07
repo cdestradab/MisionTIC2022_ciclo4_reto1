@@ -6,11 +6,11 @@ const router = express.Router();
 
 /*======================POST==========================*/ 
 router.post('/users', (req, res)=>{
-    const user = userSchema(req.body)
+    const user = userSchema(req.body);
     console.log(req.body);
     user
         .save()
-        .then(()=>res.json(data))
+        .then((data)=>res.json(data))
         .catch((error)=>res.json({ message:error }));
 });
 
